@@ -31,9 +31,11 @@ import faunaPlugin from "./fauna";
 import huggingFaceInferencePlugin from "./huggingFaceInference";
 import didPlugin from "./did";
 import bigQueryPlugin from "./bigQuery";
+import mKexPlugin from "./mKnex";
 
 let plugins: (DataSourcePlugin | DataSourcePluginFactory)[] = [
   s3Plugin,
+  mKexPlugin,
   openApiPlugin,
   n8nPlugin,
   dynamoDBPlugin,
@@ -64,7 +66,7 @@ let plugins: (DataSourcePlugin | DataSourcePluginFactory)[] = [
   gitlabPlugin,
   faunaPlugin,
   didPlugin,
-  bigQueryPlugin
+  bigQueryPlugin,
 ];
 
 try {
